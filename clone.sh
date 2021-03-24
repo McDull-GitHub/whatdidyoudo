@@ -9,7 +9,7 @@ myshell=$(basename $SHELL)
 
 if [ ! -d $HOME/.fake/bin ]; then
     mkdir -p $HOME/.fake/bin
-    cat >>$HOME/.myshellrc <<'EOF'
+    cat >>$HOME/.$myshellrc <<'EOF'
 export PATH=$HOME/.fake/bin:$PATH
 EOF
 fi
